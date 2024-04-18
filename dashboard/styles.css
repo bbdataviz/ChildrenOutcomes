@@ -1,0 +1,159 @@
+/* default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASIC STYLING */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* HEADER AND NAVIGATION */
+
+header {
+    background-color: #D1ECE4;
+    color: #111;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    flex-grow: 1; /* Allow the container to grow and occupy remaining space */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+nav {
+    color: #111;
+    padding: 10px 0px 10px 10px;
+    box-sizing: border-box;
+    width: 30%; /* Adjust width as needed */
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Resetting margin for the first link */
+}
+
+nav ul li a {
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+
+}
+
+/* DASHBOARD SECTION */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    height: calc(100vh - 80px); /* Reduce the height by 80px for header and footer */
+}
+
+.box {
+    border: 1px solid #888;
+    padding: 0px;
+    position: relative; /* Position figure captions */
+    overflow: hidden; /* Prevent graph placeholders from overflowing */
+}
+
+.graph-placeholder {
+    width: 95%; /* Adjust according to graph size */
+    height: 80%; /* Adjust according to graph size */
+    background-color: #ccc; /* Placeholder color */
+    margin: 0 auto; /* Horizontally center the graph-placeholder */
+    margin-bottom: 5px; /* Reduce margin underneath the graph-placeholder */
+}
+
+.box-header {
+    background-color: #D1ECE4; /* Background color of section header */
+    color: #111; /* Text color of section header */
+    font-size: 10px; /* Font size of section header */
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+figcaption {
+    position: absolute;
+    top: calc(90%);
+    left: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 9px;
+    padding-left: 10px;
+}
+
+/* CSS for the about page */
+
+.about-section {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: calc(70% - 20px); /* Adjust width to fill approximately 70% of the container width */
+    float: left; /* Float the paragraph to the left */
+}
+
+.about-section:first-of-type {
+    margin-top: 40px; /* Add larger margin only to the first section */
+}
+
+.about-section p {
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.about-section h2 {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0px;
+}
